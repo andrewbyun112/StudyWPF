@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PknuWPF"
         mc:Ignorable="d"
-        Title="Sample Window" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Sample Window" Height="720" Width="1280">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="100">
+        <TextBlock TextWrapping="Wrap" Text="Test Block" Height="40"
+                   Margin="10" /> 
+        <TextBox x:Name="TxtNames" Height="35" TextWrapping="Wrap" Text="Input Something" Margin="10"/>
+        <ProgressBar x:Name="PgbTest" Height="30" Margin="10" Minimum="0" Maximum="100" Value="60"/>
+        <Slider Height="40" Margin="10"/>
+        <PasswordBox Password="Test" Height="40" Margin="10"/>
+
+    </StackPanel>
 </Window>

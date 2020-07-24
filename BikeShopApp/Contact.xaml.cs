@@ -13,17 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PknuWPF
+namespace BikeShopApp
 {
     /// <summary>
-    /// MainWindow.xaml에 대한 상호 작용 논리
+    /// Contact.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Contact : Page
     {
-        public MainWindow()
+        public Contact()
         {
             InitializeComponent();
         }
 
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
