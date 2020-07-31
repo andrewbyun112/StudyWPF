@@ -1,5 +1,6 @@
 ﻿using MahApps.Metro.Controls;
 using System.Windows;
+using System.Windows.Input;
 
 namespace ThirdCaliburnApp.Views
 {
@@ -11,6 +12,11 @@ namespace ThirdCaliburnApp.Views
         public MainView()
         {
             InitializeComponent();
+        }
+
+        private void Salary_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !Commons.IsNumeric(e.Text);
         }
     }
 }
